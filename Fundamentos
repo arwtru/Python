@@ -1,0 +1,8 @@
+# estructura basica para leer e imprimir archivos csv.
+import csv 
+with open ('Direccion donde se encuenta el archivo en tu local/Negative keyword report.csv') as csvfile:
+    reader = csv.DictReader(csvfile)
+    for row in reader:
+        print(row)
+        
+#######################################################################        
